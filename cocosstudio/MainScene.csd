@@ -17,17 +17,6 @@
             <FileData Type="Normal" Path="HelloWorld.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Score" ActionTag="598070548" Tag="4" IconVisible="False" LeftMargin="39.4999" RightMargin="589.5001" TopMargin="44.0090" BottomMargin="869.9910" FontSize="20" LabelText="0&#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="11.0000" Y="46.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="44.9999" Y="892.9910" />
-            <Scale ScaleX="2.0000" ScaleY="1.8383" />
-            <CColor A="255" R="255" G="0" B="0" />
-            <PrePosition X="0.0703" Y="0.9302" />
-            <PreSize X="0.0172" Y="0.0479" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
           <AbstractNodeData Name="background2" ActionTag="-1832655534" Tag="5" IconVisible="False" TopMargin="960.0000" BottomMargin="-960.0000" ctype="SpriteObjectData">
             <Size X="640.0000" Y="960.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -39,7 +28,7 @@
             <FileData Type="Normal" Path="HelloWorld.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="cat" ActionTag="1437459562" Tag="3" IconVisible="False" LeftMargin="-430.4263" RightMargin="-81.5737" TopMargin="-74.1757" BottomMargin="386.1757" ctype="SpriteObjectData">
+          <AbstractNodeData Name="cat" ActionTag="1437459562" Tag="3" IconVisible="False" LeftMargin="-430.4263" RightMargin="-81.5737" TopMargin="-74.1758" BottomMargin="386.1757" ctype="SpriteObjectData">
             <Size X="1152.0000" Y="648.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="145.5737" Y="710.1757" />
@@ -49,6 +38,17 @@
             <PreSize X="1.8000" Y="0.6750" />
             <FileData Type="Normal" Path="catPlaceHolder.jpg" Plist="" />
             <BlendFunc Src="770" Dst="771" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="score" ActionTag="598070548" Tag="4" IconVisible="False" LeftMargin="39.4999" RightMargin="589.5001" TopMargin="44.0090" BottomMargin="869.9910" FontSize="20" LabelText="0&#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="11.0000" Y="46.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="44.9999" Y="892.9910" />
+            <Scale ScaleX="2.0000" ScaleY="1.8383" />
+            <CColor A="255" R="255" G="0" B="0" />
+            <PrePosition X="0.0703" Y="0.9302" />
+            <PreSize X="0.0172" Y="0.0479" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

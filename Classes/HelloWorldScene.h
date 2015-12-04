@@ -29,8 +29,9 @@ private:
 	cocos2d::Sprite*		cat;
 	cocos2d::Sprite*		background;
 	cocos2d::Sprite*		background2;
+	cocos2d::Label*			score;
 
-	int						left;
+	int						move;
 	int						tol;
 };
 

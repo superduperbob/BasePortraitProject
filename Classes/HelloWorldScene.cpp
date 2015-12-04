@@ -39,13 +39,15 @@ bool HelloWorld::init()
 
 	auto winSize = Director::getInstance()->getVisibleSize();
 
+	//Sprite creation
 	cat = (Sprite*)rootNode->getChildByName("cat");
 	background = (Sprite*)rootNode->getChildByName("background");
 	background2 = (Sprite*)rootNode->getChildByName("background2");
-
-	left = 0;
-
-	tol = 5;
+	
+	//Movement speed
+	move = 0;
+	//scrolling tolerance
+	tol = 0;
 
 	//Set up a touch listener.
 	auto touchListener = EventListenerTouchOneByOne::create();
@@ -59,31 +61,39 @@ bool HelloWorld::init()
 }
 
 bool HelloWorld::onTouchBegan(Touch* touch, Event* event)
-{
-	if (cat->getPosition().x <= 300)
+{ 
+	if (cat->getPosition().x > 0  && cat->getPosition().x < Director::getInstance()->getVisibleSize().width)
 	{
-		left = 20;
-	}
+		if (touch->getLocation().x >= Director::getInstance()->getVisibleSize().width / 2)
+		{
+			move = 15;
+		}
 
+		if (touch->getLocation().x <= Director::getInstance()->getVisibleSize().width / 2)
+		{
+			move = -15;
+		}
+	}
 	return true;
 }
 
 void HelloWorld::onTouchEnded(Touch* touch, Event* event)
 {	
-	left = 0;
+	move = 0;
 }
 
 static const int scrollSpeed = 5.0f;
 
 void HelloWorld::update(float delta)
 {
+	//scrolling background
 	Vec2 Bg1Pos = background->getPosition();
 	Vec2 Bg2Pos = background2->getPosition();
 
 	background->setPosition(Bg1Pos.x, Bg1Pos.y + scrollSpeed);
 	background2->setPosition(Bg2Pos.x, Bg2Pos.y + scrollSpeed);
 
-	if (background->getPosition().y > 1400+ tol)
+	if (background->getPosition().y > 1400 + tol)
 	{
 		background->setPosition(Bg1Pos.x, -480 + scrollSpeed);
 	}
@@ -93,8 +103,18 @@ void HelloWorld::update(float delta)
 		background2->setPosition(Bg2Pos.x, -480 + scrollSpeed);
 	}
 
+	//cat stuff
 	Vec2 catPos = cat->getPosition();
-	cat->setPosition(catPos.x + left, catPos.y);
+	cat->setPosition(catPos.x + move, catPos.y);
+
+	if (cat->getPosition().x < 0)
+	{
+		cat->setPosition(catPos.x + 15, catPos.y);
+	}
+	else if (cat->getPosition().x >  Director::getInstance()->getVisibleSize().width)
+	{
+		cat->setPosition(catPos.x - 15, catPos.y);
+	}
 }
 
 void HelloWorld::Start()
@@ -102,7 +122,7 @@ void HelloWorld::Start()
 	auto winSize = Director::getInstance()->getVisibleSize();
 
 	cat->setPosition(cat->getPosition().x, winSize.height*0.5f);
-	left = 0;
+	move = 0;
 	
 }
 
