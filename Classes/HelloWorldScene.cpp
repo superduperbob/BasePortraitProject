@@ -60,7 +60,10 @@ bool HelloWorld::init()
 
 bool HelloWorld::onTouchBegan(Touch* touch, Event* event)
 {
-	left = 20;
+	if (cat->getPosition().x <= 300)
+	{
+		left = 20;
+	}
 
 	return true;
 }
@@ -92,12 +95,6 @@ void HelloWorld::update(float delta)
 
 	Vec2 catPos = cat->getPosition();
 	cat->setPosition(catPos.x + left, catPos.y);
-	
-	//check cat position
-	if (cat->getPosition().x >= 610)
-	{
-		left = 0;
-	}
 }
 
 void HelloWorld::Start()
