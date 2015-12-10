@@ -1,4 +1,4 @@
-﻿Build started 10/12/2015 12:23:24.
+﻿Build started 10/12/2015 13:38:15.
      1>Project "C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat ProjectFiles\BasePortraitProject\proj.win32\BasePortraitProject.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\audio\include" /I"C:\Cocos\frameworks\cocos2d-x-3.8\external" /I"C:\Cocos\frameworks\cocos2d-x-3.8\external\chipmunk\include\chipmunk" /I"C:\Cocos\frameworks\cocos2d-x-3.8\extensions" /I..\Classes /I.. /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\cocos\editor-support" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\cocos" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\cocos\platform" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\cocos\platform\desktop" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\external\glfw3\include\win32" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\external\freetype2\include\win32\\" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\external" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\HelloWorldScene.cpp
@@ -15,8 +15,6 @@
          Debug.win32\HelloWorldScene.obj
          Debug.win32\GameManager.obj
          Debug.win32\main.obj
-     1>AppDelegate.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
-            Creating library C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.lib and object C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.exp
          BasePortraitProject.vcxproj -> C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.exe
        CustomBuildStep:
          if not exist "C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\" mkdir "C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\"
@@ -29,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:13.50
+Time Elapsed 00:00:08.76

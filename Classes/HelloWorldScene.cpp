@@ -59,8 +59,8 @@ bool HelloWorld::init()
 
 	_eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
 
-	startButton = static_cast<ui::Button*>(rootNode->getChildByName("startButton"));
-//	startButton->addTouchEventListener(CC_CALLBACK_2(HelloWorld::StartPressed, this));
+	startButton = (ui::Button*)rootNode->getChildByName("startButton");
+	startButton->addTouchEventListener(CC_CALLBACK_2(HelloWorld::StartPressed, this));
 
 	GameManager::sharedGameManager()->isGameLive = false;
 
