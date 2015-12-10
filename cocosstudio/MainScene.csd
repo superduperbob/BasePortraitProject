@@ -17,7 +17,7 @@
             <FileData Type="Normal" Path="Background.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Player" ActionTag="571795222" Tag="3" IconVisible="False" LeftMargin="260.9738" RightMargin="279.0262" TopMargin="89.2318" BottomMargin="729.7682" ctype="SpriteObjectData">
+          <AbstractNodeData Name="Player" ActionTag="571795222" Tag="3" IconVisible="False" LeftMargin="260.9710" RightMargin="279.0290" TopMargin="89.2311" BottomMargin="729.7689" ctype="SpriteObjectData">
             <Size X="100.0000" Y="141.0000" />
             <AnchorPoint ScaleX="0.5088" ScaleY="0.4981" />
             <Position X="311.8510" Y="800.0010" />
@@ -26,6 +26,17 @@
             <PrePosition X="0.4873" Y="0.8333" />
             <PreSize X="0.1563" Y="0.1469" />
             <FileData Type="Normal" Path="Cat.png" Plist="" />
+            <BlendFunc Src="770" Dst="771" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Clothes_1" ActionTag="1723454995" Tag="4" IconVisible="False" LeftMargin="468.0100" RightMargin="-124.0100" TopMargin="653.6498" BottomMargin="166.3502" ctype="SpriteObjectData">
+            <Size X="296.0000" Y="140.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="616.0100" Y="236.3502" />
+            <Scale ScaleX="2.0000" ScaleY="2.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.9625" Y="0.2462" />
+            <PreSize X="0.4625" Y="0.1458" />
+            <FileData Type="Normal" Path="Clothes1.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>
