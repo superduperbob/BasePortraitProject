@@ -13,8 +13,19 @@
             <Scale ScaleX="2.0000" ScaleY="2.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
-            <PreSize X="0.0719" Y="0.0479" />
+            <PreSize X="0.5000" Y="0.5000" />
             <FileData Type="Normal" Path="Background.png" Plist="" />
+            <BlendFunc Src="770" Dst="771" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Player" ActionTag="571795222" Tag="3" IconVisible="False" LeftMargin="260.9738" RightMargin="279.0262" TopMargin="89.2318" BottomMargin="729.7682" ctype="SpriteObjectData">
+            <Size X="100.0000" Y="141.0000" />
+            <AnchorPoint ScaleX="0.5088" ScaleY="0.4981" />
+            <Position X="311.8510" Y="800.0010" />
+            <Scale ScaleX="2.0000" ScaleY="2.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.4873" Y="0.8333" />
+            <PreSize X="0.1563" Y="0.1469" />
+            <FileData Type="Normal" Path="Cat.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>
