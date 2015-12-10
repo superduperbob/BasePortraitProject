@@ -6,6 +6,7 @@
         <Project Name="MainScene.csd" Type="Scene" />
         <Image Name="HelloWorld.png" />
         <Image Name="catPlaceHolder.jpg" />
+        <Image Name="startButton.jpg" />
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -22,6 +22,8 @@ public:
 	virtual bool onTouchBegan(cocos2d::Touch*, cocos2d::Event*);
 	virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
 
+	void StartPressed(Ref *sender, cocos2d::ui::Widget::TouchEventType type);
+
 	void Start();
 	void GameOver();
 
@@ -29,7 +31,9 @@ private:
 	cocos2d::Sprite*		cat;
 	cocos2d::Sprite*		background;
 	cocos2d::Sprite*		background2;
+	cocos2d::ui::Button*	startButton;
 	cocos2d::Label*			score;
+
 
 	int						move;
 	int						tol;

@@ -1,11 +1,14 @@
 #include "HelloWorldScene.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
+#include "GameManager.h"
+#include "stdio.h"
 
 USING_NS_CC;
 
 using namespace cocostudio::timeline;
 using namespace cocos2d;
+
 Scene* HelloWorld::createScene()
 {
     // 'scene' is an autorelease object
@@ -44,12 +47,11 @@ bool HelloWorld::init()
 	background = (Sprite*)rootNode->getChildByName("background");
 	background2 = (Sprite*)rootNode->getChildByName("background2");
 	
-	//Movement speed
+	//Movement speed for cat
 	move = 0;
-	//scrolling tolerance
+	//scrolling tolerance for background
 	tol = 0;
 
-	//Set up a touch listener.
 	auto touchListener = EventListenerTouchOneByOne::create();
 
 	touchListener->onTouchBegan = CC_CALLBACK_2(HelloWorld::onTouchBegan, this);
@@ -57,7 +59,22 @@ bool HelloWorld::init()
 
 	_eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
 
+	startButton = static_cast<ui::Button*>(rootNode->getChildByName("startButton"));
+//	startButton->addTouchEventListener(CC_CALLBACK_2(HelloWorld::StartPressed, this));
+
+	GameManager::sharedGameManager()->isGameLive = false;
+
     return true;
+}
+
+void HelloWorld::StartPressed(Ref *pSender, cocos2d::ui::Widget::TouchEventType type)
+{
+	if (type == cocos2d::ui::Widget::TouchEventType::ENDED)
+	{
+		
+		this->Start();
+	}
+	this->Start();
 }
 
 bool HelloWorld::onTouchBegan(Touch* touch, Event* event)
@@ -86,40 +103,45 @@ static const int scrollSpeed = 5.0f;
 
 void HelloWorld::update(float delta)
 {
-	//scrolling background
-	Vec2 Bg1Pos = background->getPosition();
-	Vec2 Bg2Pos = background2->getPosition();
-
-	background->setPosition(Bg1Pos.x, Bg1Pos.y + scrollSpeed);
-	background2->setPosition(Bg2Pos.x, Bg2Pos.y + scrollSpeed);
-
-	if (background->getPosition().y > 1400 + tol)
+	if (GameManager::sharedGameManager()->isGameLive)
 	{
-		background->setPosition(Bg1Pos.x, -480 + scrollSpeed);
-	}
+		//scrolling background
+		Vec2 Bg1Pos = background->getPosition();
+		Vec2 Bg2Pos = background2->getPosition();
 
-	if (background2->getPosition().y > 1400 + tol)
-	{
-		background2->setPosition(Bg2Pos.x, -480 + scrollSpeed);
-	}
+		background->setPosition(Bg1Pos.x, Bg1Pos.y + scrollSpeed);
+		background2->setPosition(Bg2Pos.x, Bg2Pos.y + scrollSpeed);
 
-	//cat stuff
-	Vec2 catPos = cat->getPosition();
-	cat->setPosition(catPos.x + move, catPos.y);
+		if (background->getPosition().y > 1400 + tol)
+		{
+			background->setPosition(Bg1Pos.x, -480 + scrollSpeed);
+		}
 
-	if (cat->getPosition().x < 0)
-	{
-		cat->setPosition(catPos.x + 15, catPos.y);
-	}
-	else if (cat->getPosition().x >  Director::getInstance()->getVisibleSize().width)
-	{
-		cat->setPosition(catPos.x - 15, catPos.y);
+		if (background2->getPosition().y > 1400 + tol)
+		{
+			background2->setPosition(Bg2Pos.x, -480 + scrollSpeed);
+		}
+
+		//cat stuff
+		Vec2 catPos = cat->getPosition();
+		cat->setPosition(catPos.x + move, catPos.y);
+
+		if (cat->getPosition().x < 0)
+		{
+			cat->setPosition(catPos.x + 15, catPos.y);
+		}
+		else if (cat->getPosition().x >  Director::getInstance()->getVisibleSize().width)
+		{
+			cat->setPosition(catPos.x - 15, catPos.y);
+		}
 	}
 }
 
 void HelloWorld::Start()
 {
 	auto winSize = Director::getInstance()->getVisibleSize();
+
+	GameManager::sharedGameManager()->isGameLive = true;
 
 	cat->setPosition(cat->getPosition().x, winSize.height*0.5f);
 	move = 0;
