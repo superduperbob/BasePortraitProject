@@ -3,6 +3,7 @@
 
 #include "cocos2d.h"
 #include "ui/CocosGUI.h"
+#include "SimpleAudioEngine.h"
 
 class HelloWorld : public cocos2d::Layer
 {
@@ -33,7 +34,7 @@ private:
 	cocos2d::Sprite*		background2;
 	cocos2d::ui::Button*	startButton;
 	cocos2d::Label*			score;
-
+	CocosDenshion::SimpleAudioEngine* audio;
 
 	int						move;
 	int						tol;

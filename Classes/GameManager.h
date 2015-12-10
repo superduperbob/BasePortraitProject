@@ -6,20 +6,14 @@
 class GameManager
 {
 public:
+	~GameManager();
 	static GameManager* sharedGameManager();
 
-	void ResetScore();
-	int getScore();
-
 	bool isGameLive;
-
-	~GameManager();
 
 private:
 	GameManager();
 	static GameManager* instance;
-
-	int score;
 };
 
 #endif 

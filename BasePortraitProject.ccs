@@ -7,6 +7,7 @@
         <Image Name="HelloWorld.png" />
         <Image Name="catPlaceHolder.jpg" />
         <Image Name="startButton.jpg" />
+        <Image Name="Background.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

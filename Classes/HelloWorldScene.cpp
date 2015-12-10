@@ -143,8 +143,11 @@ void HelloWorld::Start()
 
 	GameManager::sharedGameManager()->isGameLive = true;
 
-	cat->setPosition(cat->getPosition().x, winSize.height*0.5f);
+	cat->setPosition(winSize.width*0.5f, winSize.height*0.8f);
 	move = 0;
+	
+	auto moveTo = MoveTo::create(0.5, Vec2(winSize.width*0.5f, winSize.height*2*0.5f)); 
+	startButton->runAction(moveTo);
 	
 }
 
