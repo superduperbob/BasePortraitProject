@@ -33,11 +33,11 @@ private:
 	cocos2d::Sprite*		background;
 	cocos2d::Sprite*		background2;
 	cocos2d::ui::Button*	startButton;
-	cocos2d::Label*			score;
+	cocos2d::Label*			scoreLabel;
 	CocosDenshion::SimpleAudioEngine* audio;
 
-	int						move;
-	int						tol;
+	int	move;
+	int	tol;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

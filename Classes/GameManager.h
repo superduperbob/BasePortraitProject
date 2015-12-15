@@ -11,9 +11,15 @@ public:
 
 	bool isGameLive;
 
+	void UpdateScore(int increment);
+	void ResetScore();
+	int GetScore();
+
 private:
 	GameManager();
 	static GameManager* instance;
+
+	int score;
 };
 
 #endif 

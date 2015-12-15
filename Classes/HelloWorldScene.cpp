@@ -47,6 +47,10 @@ bool HelloWorld::init()
 	background = (Sprite*)rootNode->getChildByName("background");
 	background2 = (Sprite*)rootNode->getChildByName("background2");
 	
+	//Score label
+	scoreLabel = (Label*)rootNode->getChildByName("score");
+	//scoreLabel->setString(StringUtils::format("%d",GameManager::sharedGameManager()->GetScore()));
+
 	//Movement speed for cat
 	move = 0;
 	//scrolling tolerance for background
@@ -59,6 +63,7 @@ bool HelloWorld::init()
 
 	_eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
 
+	//Button
 	startButton = (ui::Button*)rootNode->getChildByName("startButton");
 	startButton->addTouchEventListener(CC_CALLBACK_2(HelloWorld::StartPressed, this));
 
@@ -134,6 +139,18 @@ void HelloWorld::update(float delta)
 		{
 			cat->setPosition(catPos.x - 15, catPos.y);
 		}
+		
+		int tempPos = background->getPosition().y;
+		int tempPos2 = background2->getPosition().y;
+
+		if (tempPos > background->getPosition().y - 1 || tempPos2 > background2->getPosition().y - 1)
+		{
+			GameManager::sharedGameManager()->UpdateScore(1);
+			//scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore()));
+
+		}
+		//score 
+					
 	}
 }
 
@@ -142,6 +159,7 @@ void HelloWorld::Start()
 	auto winSize = Director::getInstance()->getVisibleSize();
 
 	GameManager::sharedGameManager()->isGameLive = true;
+	GameManager::sharedGameManager()->ResetScore();
 
 	cat->setPosition(winSize.width*0.5f, winSize.height*0.8f);
 	move = 0;

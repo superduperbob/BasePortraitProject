@@ -28,27 +28,16 @@
             <FileData Type="Normal" Path="Background.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="cat" ActionTag="1437459562" Tag="3" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-256.0000" RightMargin="-256.0000" TopMargin="-132.0000" BottomMargin="443.9999" ctype="SpriteObjectData">
-            <Size X="1152.0000" Y="648.0000" />
+          <AbstractNodeData Name="score" ActionTag="598070548" Tag="4" IconVisible="False" LeftMargin="304.7540" RightMargin="308.2460" TopMargin="44.5276" BottomMargin="805.4724" FontSize="48" LabelText="0&#xA;" ShadowOffsetX="-2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+            <Size X="27.0000" Y="110.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="320.0000" Y="767.9999" />
-            <Scale ScaleX="0.0500" ScaleY="0.1500" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5000" Y="0.8000" />
-            <PreSize X="1.8000" Y="0.6750" />
-            <FileData Type="Normal" Path="catPlaceHolder.jpg" Plist="" />
-            <BlendFunc Src="770" Dst="771" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="score" ActionTag="598070548" Tag="4" IconVisible="False" LeftMargin="39.4999" RightMargin="589.5001" TopMargin="44.0090" BottomMargin="869.9910" FontSize="20" LabelText="0&#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="11.0000" Y="46.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="44.9999" Y="892.9910" />
+            <Position X="318.2540" Y="860.4724" />
             <Scale ScaleX="2.0000" ScaleY="1.8383" />
-            <CColor A="255" R="255" G="0" B="0" />
-            <PrePosition X="0.0703" Y="0.9302" />
-            <PreSize X="0.0172" Y="0.0479" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.4973" Y="0.8963" />
+            <PreSize X="0.0422" Y="0.1146" />
             <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
+            <ShadowColor A="255" R="77" G="77" B="77" />
           </AbstractNodeData>
           <AbstractNodeData Name="startButton" ActionTag="1928397429" Tag="7" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="-48.0000" RightMargin="-48.0000" TopMargin="280.0000" BottomMargin="280.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="706" Scale9Height="378" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="736.0000" Y="400.0000" />
@@ -64,6 +53,17 @@
             <NormalFileData Type="Normal" Path="startButton.jpg" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="cat" ActionTag="-2089904111" Tag="7" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="270.0000" RightMargin="270.0000" TopMargin="121.5001" BottomMargin="697.4999" ctype="SpriteObjectData">
+            <Size X="100.0000" Y="141.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="320.0000" Y="767.9999" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.5000" Y="0.8000" />
+            <PreSize X="0.1563" Y="0.1469" />
+            <FileData Type="Normal" Path="cat.png" Plist="" />
+            <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>
       </ObjectData>
