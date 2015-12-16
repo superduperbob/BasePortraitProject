@@ -19,7 +19,7 @@ public:
 
 private:
 	cocos2d::Sprite* clothesLeft;
-	cocs2d::Sprite* clothesRight
+	cocos2d::Sprite* clothesRight;
 	
 	float            startXPosition;
 	float            startXPosition_left;

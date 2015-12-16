@@ -3,6 +3,7 @@
 #include "ui/CocosGUI.h"
 #include "GameManager.h"
 #include "stdio.h"
+#include "ClothesLine.h"
 
 USING_NS_CC;
 
@@ -47,7 +48,7 @@ bool HelloWorld::init()
 	background = (Sprite*)rootNode->getChildByName("background");
 	background2 = (Sprite*)rootNode->getChildByName("background2");
 
-	clothesLine = (ClothesLine*)rootNode->getChildByName("Clothes1");
+	clothesLine = (ClothesLine*)rootNode->getChildByName("Clothes_1");
 	clothesLine = ClothesLine::create();
 	this->addChild(clothesLine);
 	

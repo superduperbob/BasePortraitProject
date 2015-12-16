@@ -1,0 +1,27 @@
+﻿Build started 16/12/2015 18:22:21.
+     1>Project "C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\BasePortraitProject.vcxproj" on node 2 (Build target(s)).
+     1>PreLinkEvent:
+         if not exist "C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\" mkdir "C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\"
+         xcopy /Y /Q "C:\Cocos\frameworks\cocos2d-x-3.8\prebuilt\win32\*.*" "C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\"
+         
+         :VCEnd
+         60 File(s) copied
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\ /LIBPATH:C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\ opengl32.lib glew32.lib libzlib.lib libwebp.lib libiconv.lib freetype.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.lib" /MACHINE:X86 /SAFESEH Debug.win32\game.res
+         Debug.win32\AppDelegate.obj
+         Debug.win32\HelloWorldScene.obj
+         Debug.win32\ClothesLine.obj
+         Debug.win32\main.obj
+     1>AppDelegate.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+            Creating library C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.lib and object C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.exp
+     1>HelloWorldScene.obj : error LNK2019: unresolved external symbol "public: static class GameManager * __cdecl GameManager::sharedGameManager(void)" (?sharedGameManager@GameManager@@SAPAV1@XZ) referenced in function "public: void __thiscall HelloWorld::Start(void)" (?Start@HelloWorld@@QAEXXZ)
+     1>ClothesLine.obj : error LNK2001: unresolved external symbol "public: static class GameManager * __cdecl GameManager::sharedGameManager(void)" (?sharedGameManager@GameManager@@SAPAV1@XZ)
+     1>HelloWorldScene.obj : error LNK2019: unresolved external symbol "public: void __thiscall GameManager::UpdateScore(int)" (?UpdateScore@GameManager@@QAEXH@Z) referenced in function "public: virtual void __thiscall HelloWorld::update(float)" (?update@HelloWorld@@UAEXM@Z)
+     1>HelloWorldScene.obj : error LNK2019: unresolved external symbol "public: void __thiscall GameManager::ResetScore(void)" (?ResetScore@GameManager@@QAEXXZ) referenced in function "public: void __thiscall HelloWorld::Start(void)" (?Start@HelloWorld@@QAEXXZ)
+     1>HelloWorldScene.obj : error LNK2019: unresolved external symbol "public: int __thiscall GameManager::GetScore(void)" (?GetScore@GameManager@@QAEHXZ) referenced in function "public: virtual void __thiscall HelloWorld::update(float)" (?update@HelloWorld@@UAEXM@Z)
+     1>C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.exe : fatal error LNK1120: 4 unresolved externals
+     1>Done Building Project "C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\BasePortraitProject.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.89
