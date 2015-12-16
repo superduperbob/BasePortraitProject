@@ -49,6 +49,7 @@ bool HelloWorld::init()
 	
 	//Score label
 	scoreLabel = (Label*)rootNode->getChildByName("score");
+	scoreLabel->setString("Banana");
 	//scoreLabel->setString(StringUtils::format("%d",GameManager::sharedGameManager()->GetScore()));
 
 	//Movement speed for cat
@@ -66,6 +67,8 @@ bool HelloWorld::init()
 	//Button
 	startButton = (ui::Button*)rootNode->getChildByName("startButton");
 	startButton->addTouchEventListener(CC_CALLBACK_2(HelloWorld::StartPressed, this));
+	
+	CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("Quirky_dog.mp3", true);
 
 	GameManager::sharedGameManager()->isGameLive = false;
 
@@ -75,8 +78,7 @@ bool HelloWorld::init()
 void HelloWorld::StartPressed(Ref *pSender, cocos2d::ui::Widget::TouchEventType type)
 {
 	if (type == cocos2d::ui::Widget::TouchEventType::ENDED)
-	{
-		
+	{	
 		this->Start();
 	}
 	this->Start();
@@ -166,7 +168,10 @@ void HelloWorld::Start()
 	
 	auto moveTo = MoveTo::create(0.5, Vec2(winSize.width*0.5f, winSize.height*2*0.5f)); 
 	startButton->runAction(moveTo);
+
+	CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect("Meow.mp3");
 	
+	CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("Meanwhile_in_Bavaria.mp3", true);
 }
 
 void HelloWorld::GameOver()

@@ -54,11 +54,11 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="cat" ActionTag="-2089904111" Tag="7" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="270.0000" RightMargin="270.0000" TopMargin="121.5001" BottomMargin="697.4999" ctype="SpriteObjectData">
+          <AbstractNodeData Name="cat" ActionTag="-2089904111" Tag="7" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="270.0000" RightMargin="270.0000" TopMargin="121.5000" BottomMargin="697.5000" ctype="SpriteObjectData">
             <Size X="100.0000" Y="141.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="320.0000" Y="767.9999" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <Position X="320.0000" Y="768.0000" />
+            <Scale ScaleX="1.2000" ScaleY="1.2000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5000" Y="0.8000" />
             <PreSize X="0.1563" Y="0.1469" />
