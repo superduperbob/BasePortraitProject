@@ -2,6 +2,10 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "ui/CocosGUI.h"
+#include "SimpleAudioEngine.h"
+
+class ClothesLine;
 
 class HelloWorld : public cocos2d::Layer
 {
@@ -14,6 +18,31 @@ public:
 
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
+
+	void update(float);
+
+	//Touch setup
+	virtual bool onTouchBegan(cocos2d::Touch*, cocos2d::Event*);
+	virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
+
+	void StartPressed(Ref *sender, cocos2d::ui::Widget::TouchEventType type);
+
+	void Start();
+	void GameOver();
+
+private:
+	cocos2d::Sprite*		cat;
+	cocos2d::Sprite*		background;
+	cocos2d::Sprite*		background2;
+	cocos2d::ui::Button*	startButton;
+	cocos2d::ui::Text*			scoreLabel;
+	CocosDenshion::SimpleAudioEngine* audio;
+
+	ClothesLine*			clothesLine;
+
+	int	move;
+	int	tol;
+	int startScore;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

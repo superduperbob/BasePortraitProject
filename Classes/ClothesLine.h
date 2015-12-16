@@ -18,11 +18,12 @@ public:
 	void         reset();
 
 private:
-	cocos2d::Sprite* Clothes_1;
+	cocos2d::Sprite* clothesLeft;
+	cocs2d::Sprite* clothesRight
 	
 	float            startXPosition;
-	float            startYPosition_top;
-	float            startYPosition_bottom;
+	float            startXPosition_left;
+	float            startXPosition_right;
 	float            currentSpeed;
 };
 
