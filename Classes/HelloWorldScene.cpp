@@ -48,15 +48,16 @@ bool HelloWorld::init()
 	background2 = (Sprite*)rootNode->getChildByName("background2");
 	
 	//Score label
-	scoreLabel = (Label*)rootNode->getChildByName("score");
-	scoreLabel->setString("Banana");
-	//scoreLabel->setString(StringUtils::format("%d",GameManager::sharedGameManager()->GetScore()));
+	startScore = 0;
+	scoreLabel = (ui::Text*)rootNode->getChildByName("score");
+	scoreLabel->setString(StringUtils::format("%d", startScore));
+	scoreLabel->setPosition(Vec2(Director::getInstance()->getVisibleSize().width / 2, Director::getInstance()->getVisibleSize().height * 0.95));
 
 	//Movement speed for cat
 	move = 0;
 	//scrolling tolerance for background
 	tol = 0;
-
+	
 	auto touchListener = EventListenerTouchOneByOne::create();
 
 	touchListener->onTouchBegan = CC_CALLBACK_2(HelloWorld::onTouchBegan, this);
@@ -145,14 +146,13 @@ void HelloWorld::update(float delta)
 		int tempPos = background->getPosition().y;
 		int tempPos2 = background2->getPosition().y;
 
-		if (tempPos > background->getPosition().y - 1 || tempPos2 > background2->getPosition().y - 1)
+		//score
+		if (tempPos > background->getPosition().y -100  || tempPos2 > background2->getPosition().y -100 )
 		{
 			GameManager::sharedGameManager()->UpdateScore(1);
-			//scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore()));
+			scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore() /10));
 
-		}
-		//score 
-					
+		}				
 	}
 }
 
@@ -160,8 +160,8 @@ void HelloWorld::Start()
 {
 	auto winSize = Director::getInstance()->getVisibleSize();
 
-	GameManager::sharedGameManager()->isGameLive = true;
 	GameManager::sharedGameManager()->ResetScore();
+	GameManager::sharedGameManager()->isGameLive = true;
 
 	cat->setPosition(winSize.width*0.5f, winSize.height*0.8f);
 	move = 0;

@@ -28,13 +28,13 @@
             <FileData Type="Normal" Path="Background.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="score" ActionTag="598070548" Tag="4" IconVisible="False" LeftMargin="304.7540" RightMargin="308.2460" TopMargin="44.5276" BottomMargin="805.4724" FontSize="48" LabelText="0&#xA;" ShadowOffsetX="-2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="score" ActionTag="598070548" Tag="4" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="306.5000" RightMargin="306.5000" TopMargin="41.0000" BottomMargin="809.0000" FontSize="48" LabelText="0&#xA;" ShadowOffsetX="-2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="27.0000" Y="110.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="318.2540" Y="860.4724" />
+            <Position X="320.0000" Y="864.0000" />
             <Scale ScaleX="2.0000" ScaleY="1.8383" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.4973" Y="0.8963" />
+            <PrePosition X="0.5000" Y="0.9000" />
             <PreSize X="0.0422" Y="0.1146" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="77" G="77" B="77" />
