@@ -151,7 +151,6 @@ void HelloWorld::update(float delta)
 		{
 			GameManager::sharedGameManager()->UpdateScore(1);
 			scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore() /10));
-
 		}				
 	}
 }

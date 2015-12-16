@@ -14,7 +14,7 @@
         <LuaEncryptSign Value="" />
         <Android_PackageName Value="org.cocos.BasePortraitProject" />
         <AndroidkeyStore Value="" />
-        <AndroidVersion Value="android-20" />
+        <AndroidVersion Value="android-19" />
         <iOS_Target Value="BasePortraitProject-mobile" />
         <iOS_BundleID Value="" />
         <Platform Value="Android" />
@@ -30,10 +30,7 @@
     </Item>
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="MainScene.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="MainScene.csd" />
+        <ActiveDocument />
       </Value>
     </Item>
   </Properties>
