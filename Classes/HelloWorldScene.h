@@ -5,6 +5,8 @@
 #include "ui/CocosGUI.h"
 #include "SimpleAudioEngine.h"
 
+class ClothesLine;
+
 class HelloWorld : public cocos2d::Layer
 {
 public:
@@ -35,6 +37,8 @@ private:
 	cocos2d::ui::Button*	startButton;
 	cocos2d::ui::Text*			scoreLabel;
 	CocosDenshion::SimpleAudioEngine* audio;
+
+	ClothesLine*			clothesLine;
 
 	int	move;
 	int	tol;

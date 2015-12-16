@@ -1,4 +1,4 @@
-﻿Build started 16/12/2015 19:21:39.
+﻿Build started 16/12/2015 19:43:47.
      1>Project "C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\BasePortraitProject.vcxproj" on node 2 (Build target(s)).
      1>PreLinkEvent:
          if not exist "C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\" mkdir "C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\"
@@ -7,6 +7,14 @@
          :VCEnd
          60 File(s) copied
        Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\ /LIBPATH:C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\ opengl32.lib glew32.lib libzlib.lib libwebp.lib libiconv.lib freetype.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.lib" /MACHINE:X86 /SAFESEH Debug.win32\game.res
+         Debug.win32\AppDelegate.obj
+         Debug.win32\GameManager.obj
+         Debug.win32\HelloWorldScene.obj
+         Debug.win32\main.obj
+         LINK : C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.exe not found or not built by the last incremental link; performing full link
+     1>AppDelegate.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+            Creating library C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.lib and object C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.exp
          BasePortraitProject.vcxproj -> C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.exe
        CustomBuildStep:
          if not exist "C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\" mkdir "C:\Users\Matt\Dropbox\Uni\Year2\TGP\ParaCat_ProjectFiles\BasePortraitProject\proj.win32\Debug.win32\"
@@ -19,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.03
+Time Elapsed 00:00:02.25

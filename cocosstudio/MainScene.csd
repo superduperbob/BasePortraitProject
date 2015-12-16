@@ -65,6 +65,17 @@
             <FileData Type="Normal" Path="cat.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
+          <AbstractNodeData Name="Clothes_1" ActionTag="-834352034" Tag="7" IconVisible="False" LeftMargin="152.0000" RightMargin="442.0000" TopMargin="624.0000" BottomMargin="290.0000" ctype="SpriteObjectData">
+            <Size X="296.0000" Y="140.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="175.0000" Y="313.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.2734" Y="0.3260" />
+            <PreSize X="0.0719" Y="0.0479" />
+            <FileData Type="Normal" Path="Clothes1.png" Plist="" />
+            <BlendFunc Src="770" Dst="771" />
+          </AbstractNodeData>
         </Children>
       </ObjectData>
     </Content>

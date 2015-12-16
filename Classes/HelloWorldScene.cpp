@@ -3,6 +3,7 @@
 #include "ui/CocosGUI.h"
 #include "GameManager.h"
 #include "stdio.h"
+#include "ClothesLine.h"
 
 USING_NS_CC;
 
@@ -46,6 +47,10 @@ bool HelloWorld::init()
 	cat = (Sprite*)rootNode->getChildByName("cat");
 	background = (Sprite*)rootNode->getChildByName("background");
 	background2 = (Sprite*)rootNode->getChildByName("background2");
+
+	clothesLine = (ClothesLine*)rootNode->getChildByName("Clothes_1");
+	clothesLine = ClothesLine::create();
+	this->addChild(clothesLine);
 	
 	//Score label
 	startScore = 0;
@@ -98,6 +103,8 @@ bool HelloWorld::onTouchBegan(Touch* touch, Event* event)
 		{
 			move = -15;
 		}
+
+		
 	}
 	return true;
 }
@@ -143,6 +150,11 @@ void HelloWorld::update(float delta)
 			cat->setPosition(catPos.x - 15, catPos.y);
 		}
 		
+		if (clothesLine->clothesCollide(cat->getBoundingBox()))
+		{
+			this->GameOver();
+		}
+
 		int tempPos = background->getPosition().y;
 		int tempPos2 = background2->getPosition().y;
 
@@ -151,6 +163,7 @@ void HelloWorld::update(float delta)
 		{
 			GameManager::sharedGameManager()->UpdateScore(1);
 			scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore() /10));
+
 		}				
 	}
 }
