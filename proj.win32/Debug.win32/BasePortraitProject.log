@@ -1,21 +1,37 @@
-﻿Build started 17/12/2015 19:19:13.
-     1>Project "C:\Student Temporary Folder\BasePortraitProject\proj.win32\BasePortraitProject.vcxproj" on node 2 (Build target(s)).
-     1>PreLinkEvent:
-         if not exist "C:\Student Temporary Folder\BasePortraitProject\proj.win32\Debug.win32\" mkdir "C:\Student Temporary Folder\BasePortraitProject\proj.win32\Debug.win32\"
-         xcopy /Y /Q "\cocos2d-x-3.8\prebuilt\win32\*.*" "C:\Student Temporary Folder\BasePortraitProject\proj.win32\Debug.win32\"
+﻿Build started 17/12/15 22:11:43.
+     1>Project "C:\Users\paulh\Documents\TGPAssesment\BasePortraitProject\proj.win32\BasePortraitProject.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Program Files (x86)\Visual Studio\VC\bin\CL.exe /c /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\audio\include" /I"C:\Cocos\frameworks\cocos2d-x-3.8\external" /I"C:\Cocos\frameworks\cocos2d-x-3.8\external\chipmunk\include\chipmunk" /I"C:\Cocos\frameworks\cocos2d-x-3.8\extensions" /I..\Classes /I.. /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\cocos\editor-support" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\cocos" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\cocos\platform" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\cocos\platform\desktop" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\external\glfw3\include\win32" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\external\freetype2\include\win32\\" /I"C:\Cocos\frameworks\cocos2d-x-3.8\cocos\2d\..\..\external" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug.win32\\" /Fd"Debug.win32\vc140.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\HelloWorldScene.cpp
+         HelloWorldScene.cpp
+     1>c:\users\paulh\documents\tgpassesment\baseportraitproject\classes\helloworldscene.cpp(84): warning C4996: 'CocosDenshion::SimpleAudioEngine::sharedEngine': was declared deprecated
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\audio\include\simpleaudioengine.h(70): note: see declaration of 'CocosDenshion::SimpleAudioEngine::sharedEngine'
+     1>c:\users\paulh\documents\tgpassesment\baseportraitproject\classes\helloworldscene.cpp(223): warning C4996: 'CocosDenshion::SimpleAudioEngine::sharedEngine': was declared deprecated
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\audio\include\simpleaudioengine.h(70): note: see declaration of 'CocosDenshion::SimpleAudioEngine::sharedEngine'
+     1>c:\users\paulh\documents\tgpassesment\baseportraitproject\classes\helloworldscene.cpp(225): warning C4996: 'CocosDenshion::SimpleAudioEngine::sharedEngine': was declared deprecated
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\audio\include\simpleaudioengine.h(70): note: see declaration of 'CocosDenshion::SimpleAudioEngine::sharedEngine'
+     1>c:\users\paulh\documents\tgpassesment\baseportraitproject\classes\helloworldscene.cpp(232): warning C4996: 'CocosDenshion::SimpleAudioEngine::sharedEngine': was declared deprecated
+         c:\cocos\frameworks\cocos2d-x-3.8\cocos\audio\include\simpleaudioengine.h(70): note: see declaration of 'CocosDenshion::SimpleAudioEngine::sharedEngine'
+       PreLinkEvent:
+         if not exist "C:\Users\paulh\Documents\TGPAssesment\BasePortraitProject\proj.win32\Debug.win32\" mkdir "C:\Users\paulh\Documents\TGPAssesment\BasePortraitProject\proj.win32\Debug.win32\"
+         xcopy /Y /Q "C:\Cocos\frameworks\cocos2d-x-3.8\prebuilt\win32\*.*" "C:\Users\paulh\Documents\TGPAssesment\BasePortraitProject\proj.win32\Debug.win32\"
          
          :VCEnd
          60 File(s) copied
        Link:
-         BasePortraitProject.vcxproj -> C:\Student Temporary Folder\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.exe
+         D:\Program Files (x86)\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\paulh\Documents\TGPAssesment\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\paulh\Documents\TGPAssesment\BasePortraitProject\proj.win32\Debug.win32\ /LIBPATH:C:\Users\paulh\Documents\TGPAssesment\BasePortraitProject\proj.win32\Debug.win32\ opengl32.lib glew32.lib libzlib.lib libwebp.lib libiconv.lib freetype.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\paulh\Documents\TGPAssesment\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\paulh\Documents\TGPAssesment\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.lib" /MACHINE:X86 /SAFESEH Debug.win32\game.res
+         Debug.win32\AppDelegate.obj
+         Debug.win32\GameManager.obj
+         Debug.win32\HelloWorldScene.obj
+         Debug.win32\main.obj
+         BasePortraitProject.vcxproj -> C:\Users\paulh\Documents\TGPAssesment\BasePortraitProject\proj.win32\Debug.win32\BasePortraitProject.exe
        CustomBuildStep:
-         if not exist "C:\Student Temporary Folder\BasePortraitProject\proj.win32\Debug.win32\" mkdir "C:\Student Temporary Folder\BasePortraitProject\proj.win32\Debug.win32\"
-         xcopy "C:\Student Temporary Folder\BasePortraitProject\proj.win32\..\Resources" "C:\Student Temporary Folder\BasePortraitProject\proj.win32\Debug.win32\" /D /E /I /F /Y
+         if not exist "C:\Users\paulh\Documents\TGPAssesment\BasePortraitProject\proj.win32\Debug.win32\" mkdir "C:\Users\paulh\Documents\TGPAssesment\BasePortraitProject\proj.win32\Debug.win32\"
+         xcopy "C:\Users\paulh\Documents\TGPAssesment\BasePortraitProject\proj.win32\..\Resources" "C:\Users\paulh\Documents\TGPAssesment\BasePortraitProject\proj.win32\Debug.win32\" /D /E /I /F /Y
                
          :VCEnd
          0 File(s) copied
-     1>Done Building Project "C:\Student Temporary Folder\BasePortraitProject\proj.win32\BasePortraitProject.vcxproj" (Build target(s)).
+     1>Done Building Project "C:\Users\paulh\Documents\TGPAssesment\BasePortraitProject\proj.win32\BasePortraitProject.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.46
+Time Elapsed 00:00:04.98

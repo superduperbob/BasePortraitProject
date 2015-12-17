@@ -226,5 +226,15 @@ void HelloWorld::Start()
 
 void HelloWorld::GameOver()
 {
+	auto winSize = Director::getInstance()->getVisibleSize();
+	CocosDenshion::SimpleAudioEngine::getInstance()->stopBackgroundMusic("Meanwhile_in_Bavaria.mp3");
+	CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect("Meow.mp3");
 
+	startScore = 0;
+	scoreLabel->setString(StringUtils::format("%d", startScore));
+
+	GameManager::sharedGameManager()->isGameLive = false;
+
+	auto moveTo = MoveTo::create(0.5, Vec2(winSize.width*0.5f, winSize.height*0.5f));
+	startButton->runAction(moveTo);
 }
