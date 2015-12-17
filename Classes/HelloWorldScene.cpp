@@ -48,9 +48,16 @@ bool HelloWorld::init()
 	background = (Sprite*)rootNode->getChildByName("background");
 	background2 = (Sprite*)rootNode->getChildByName("background2");
 
-	clothesLine = (ClothesLine*)rootNode->getChildByName("Clothes_1");
+	clothesleft1 = (Sprite*)rootNode->getChildByName("clothesleft1");
+	clothesright1 = (Sprite*)rootNode->getChildByName("clothesright1");
+	clothesleft2 = (Sprite*)rootNode->getChildByName("clothesleft2");
+	clothesright2 = (Sprite*)rootNode->getChildByName("clothesright2");
+
+	
+
+	/*clothesLine = (ClothesLine*)rootNode->getChildByName("Clothes_1");
 	clothesLine = ClothesLine::create();
-	this->addChild(clothesLine);
+	this->addChild(clothesLine);*/
 	
 	//Score label
 	startScore = 0;
@@ -137,6 +144,37 @@ void HelloWorld::update(float delta)
 			background2->setPosition(Bg2Pos.x, -480 + scrollSpeed);
 		}
 
+		//clothes scroll
+		Vec2 CL1Pos = clothesleft1->getPosition();
+		Vec2 CR1Pos = clothesright1->getPosition();
+		Vec2 CL2Pos = clothesleft2->getPosition();
+		Vec2 CR2Pos = clothesright2->getPosition();
+
+		clothesleft1->setPosition(CL1Pos.x, CL1Pos.y + scrollSpeed);
+		clothesright1->setPosition(CR1Pos.x, CR1Pos.y + scrollSpeed);
+		clothesleft2->setPosition(CL2Pos.x, CL2Pos.y + scrollSpeed);
+		clothesright2->setPosition(CR2Pos.x, CR2Pos.y + scrollSpeed);
+
+		if (clothesleft1->getPosition().y > 1400 + tol)
+		{
+			clothesleft1->setPosition(CL1Pos.x, -480 + scrollSpeed);
+		}
+
+		if (clothesright1->getPosition().y > 1400 + tol)
+		{
+			clothesright1->setPosition(CR1Pos.x, -480 + scrollSpeed);
+		}
+
+		if (clothesleft2->getPosition().y > 1400 + tol)
+		{
+			clothesleft2->setPosition(CL2Pos.x, -480 + scrollSpeed);
+		}
+
+		if (clothesright2->getPosition().y > 1400 + tol)
+		{
+			clothesright2->setPosition(CR2Pos.x, -480 + scrollSpeed);
+		}
+
 		//cat stuff
 		Vec2 catPos = cat->getPosition();
 		cat->setPosition(catPos.x + move, catPos.y);
@@ -150,11 +188,11 @@ void HelloWorld::update(float delta)
 			cat->setPosition(catPos.x - 15, catPos.y);
 		}
 		
-		if (clothesLine->clothesCollide(cat->getBoundingBox()))
+		/*if (clothesLine->clothesCollide(cat->getBoundingBox()))
 		{
 			this->GameOver();
 		}
-
+*/
 		int tempPos = background->getPosition().y;
 		int tempPos2 = background2->getPosition().y;
 

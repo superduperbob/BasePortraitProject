@@ -34,11 +34,16 @@ private:
 	cocos2d::Sprite*		cat;
 	cocos2d::Sprite*		background;
 	cocos2d::Sprite*		background2;
+	cocos2d::Sprite*		clothesleft1;
+	cocos2d::Sprite*		clothesright1;
+	cocos2d::Sprite*		clothesleft2;
+	cocos2d::Sprite*		clothesright2;
+
 	cocos2d::ui::Button*	startButton;
 	cocos2d::ui::Text*			scoreLabel;
 	CocosDenshion::SimpleAudioEngine* audio;
 
-	ClothesLine*			clothesLine;
+	/*ClothesLine*			clothesLine;*/
 
 	int	move;
 	int	tol;
